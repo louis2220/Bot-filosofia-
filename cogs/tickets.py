@@ -1,14 +1,3 @@
-"""
-cogs/tickets.py
-Sistema de tickets completo:
- - Embed de painel totalmente configurável (título, descrição, cor, banner, footer, servidor)
- - Select menu com categorias configuráveis (até 6) usando emojis numéricos personalizados
- - Modal "Descreva seu ticket" ao selecionar categoria
- - Embed interna do ticket com categoria, motivo e avatar do usuário
- - Painel Admin: botões Atender · Painel Admin · Fechar · Notificar Atendente
- - Todos os outros recursos: add/remove user, rename, transcript, lista
-"""
-
 import discord
 from discord import app_commands
 from discord.ext import commands
