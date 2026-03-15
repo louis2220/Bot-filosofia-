@@ -21,7 +21,7 @@ REQUIRES_REVIEW = {"mestrado", "doutorado", "pos_doutorado"}
 
 LEVEL_LABELS = {
     "profissional":  "Profissional",
-    "graduacao":     "Graduação+",
+    "graduacao":     "Graduação",
     "mestrado":      "Mestrado",
     "doutorado":     "Doutorado",
     "pos_doutorado": "Pós-doutorado",
@@ -77,7 +77,7 @@ class AcademicLevelSelect(discord.ui.Select):
     def __init__(self):
         options = [
             discord.SelectOption(label="Profissional",  value="profissional",  description="Atribuído automaticamente",      emoji="1️⃣"),
-            discord.SelectOption(label="Graduação+",    value="graduacao",     description="Atribuído automaticamente",      emoji="2️⃣"),
+            discord.SelectOption(label="Graduação",    value="graduacao",     description="Atribuído automaticamente",      emoji="2️⃣"),
             discord.SelectOption(label="Mestrado",      value="mestrado",      description="Requer formulário de avaliação", emoji="3️⃣"),
             discord.SelectOption(label="Doutorado",     value="doutorado",     description="Requer formulário de avaliação", emoji="4️⃣"),
             discord.SelectOption(label="Pós-doutorado", value="pos_doutorado", description="Requer formulário de avaliação", emoji="5️⃣"),
