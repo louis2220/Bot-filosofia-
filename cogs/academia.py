@@ -21,7 +21,7 @@ REQUIRES_REVIEW = {"mestrado", "doutorado", "pos_doutorado"}
 
 LEVEL_LABELS = {
     "profissional":  "Profissional",
-    "graduacao":     "Graduação+",
+    "graduacao":     "Graduação",
     "mestrado":      "Mestrado",
     "doutorado":     "Doutorado",
     "pos_doutorado": "Pós-doutorado",
