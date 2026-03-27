@@ -227,7 +227,7 @@ class Cores(commands.Cog):
 
     def _role_id(self, guild_id, key):
         v = self._cfg(guild_id, f"role_{key}")
-        return int(v) if v else None
+        return int(v.strip('"')) if v else None
 
     def _all_color_role_ids(self, guild_id):
         ids = set()
