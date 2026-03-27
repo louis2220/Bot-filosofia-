@@ -231,7 +231,7 @@ class Academia(commands.Cog):
                     f"O cargo para **{LEVEL_LABELS[level_key]}** não foi configurado."),
                 ephemeral=True,
             )
-        role = guild.get_role(int(role_id))
+        role = guild.get_role(int(role_id.strip('"')))
         if not role:
             return await inter.followup.send(
                 embed=embed_error("Cargo não encontrado", "O cargo configurado não existe mais."),
