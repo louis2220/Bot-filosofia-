@@ -252,7 +252,7 @@ class Academia(commands.Cog):
 
         pending_rid = self._cfg(guild.id, "role_pending")
         if pending_rid:
-            pr = guild.get_role(int(pending_rid))
+            pr = guild.get_role(int(pending_rid.strip('"')))
             if pr and pr not in inter.user.roles:
                 await inter.user.add_roles(pr, reason="Candidatura acadêmica pendente")
 
