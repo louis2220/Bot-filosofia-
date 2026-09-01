@@ -24,8 +24,7 @@ log = logging.getLogger("bot")
 
 PREFIX = os.environ.get("BOT_PREFIX", ".")
 
-COGS = [
-    "cogs.matematica",
+COGS = [   
     "cogs.utilidades",
     "cogs.lembretes",
     "cogs.tags",
