@@ -30,7 +30,7 @@ APPLICATION_NS = "role_apps"
 LEVELS: dict[str, dict[str, Any]] = {
     "entusiasta": {
         "label": "Entusiasta",
-        "description": "Interessado em matemática, sem exigência acadêmica.",
+        "description": "Interessado em alguma área, sem exigência acadêmica.",
         "review": False,
     },
     "pre": {
@@ -229,7 +229,7 @@ class AcademicLevelSelect(discord.ui.Select):
             )
         )
         super().__init__(
-            placeholder="Selecione seu nível de matemática...",
+            placeholder="Selecione seu nível ou currículo acadêmico...",
             min_values=1,
             max_values=1,
             options=options,
@@ -250,7 +250,7 @@ class AcademicMenuView(discord.ui.LayoutView):
         self.add_item(
             discord.ui.Container(
                 discord.ui.TextDisplay(
-                    "# Selecione seu nível de matemática\n"
+                    "# Selecione seu nível ou currículo acadêmico\n"
                     "Escolha apenas a opção que melhor representa seu nível atual."
                 ),
                 discord.ui.ActionRow(AcademicLevelSelect()),
@@ -261,8 +261,8 @@ class AcademicMenuView(discord.ui.LayoutView):
 
 class AdvancedApplicationModal(discord.ui.Modal):
     area = discord.ui.TextInput(
-        label="Qual área da matemática lhe interessa?",
-        placeholder="Ex.: lógica, álgebra, análise, EDPs...",
+        label="Qual área acadêmica lhe interessa?",
+        placeholder="Ex.: lógica, filosofia, teologia, etc...",
         style=discord.TextStyle.paragraph,
         max_length=600,
     )
