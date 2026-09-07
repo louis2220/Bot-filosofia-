@@ -121,7 +121,7 @@ def _recipient_layout(
         thumbnail=thumbnail,
         footer=(
             f"Código do aviso: {notice_id} · Para falar com a moderação, "
-            "acesse o ModMail do servidor."
+            "acesse o canal ticket do servidor."
         ),
         timeout=None,
     )
